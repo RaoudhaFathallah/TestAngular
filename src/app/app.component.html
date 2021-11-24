@@ -1,0 +1,19 @@
+<p> Posts</p>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Poste</th>
+            <th>Commentaires</th>
+            <th>Date</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let post of posts">
+            <td>{{post.post_text}}</td>
+            <td>{{post.post_comments}}</td>
+            <td>{{post.post_date}}</td>
+        </tr>
+    </tbody>
+</table>
+<router-outlet></router-outlet>
